@@ -810,6 +810,9 @@ section {
 
 #Shop {
   background-color: #f8fafc;
+  height: max-content;
+  width: 100%;
+  padding-bottom: 10rem;
 }
 
 #Shop .header {
@@ -834,16 +837,17 @@ section {
   background-color: #fff;
   border-radius: 15px;
   height: 12.7rem;
-  width: 28rem;
+  width: 27.9rem;
   overflow: hidden;
   border-radius: 8px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   border: 1px solid #e4e4e4;
 }
 
 .product .image img {
   border-radius: 4%;
+  padding: 1rem;
 }
 
 .desc {
@@ -852,7 +856,7 @@ section {
 }
 
 .desc h3 {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .desc .uni {
@@ -868,7 +872,7 @@ section {
 .desc .add-btn .btn-pos {
   padding-top: 2rem;
   display: flex;
-  gap: 4rem;
+  gap: 3rem;
   align-items: center;
   justify-content: space-between;
 }
