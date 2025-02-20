@@ -339,6 +339,7 @@ section {
 }
 
 @-webkit-keyframes dog-tail {
+
   from,
   to {
     -webkit-transform: rotate(10deg);
@@ -353,6 +354,7 @@ section {
 }
 
 @keyframes dog-tail {
+
   from,
   to {
     -webkit-transform: rotate(10deg);
@@ -380,6 +382,7 @@ section {
 }
 
 @-webkit-keyframes dog-tail-before {
+
   from,
   to {
     -webkit-transform: translateX(0);
@@ -393,6 +396,7 @@ section {
 }
 
 @keyframes dog-tail-before {
+
   from,
   to {
     -webkit-transform: translateX(0);
@@ -547,6 +551,7 @@ section {
 }
 
 @-webkit-keyframes dog-eye {
+
   from,
   to {
     -webkit-animation-timing-function: step-end;
@@ -563,6 +568,7 @@ section {
 }
 
 @keyframes dog-eye {
+
   from,
   to {
     -webkit-animation-timing-function: step-end;
@@ -1002,18 +1008,25 @@ footer {
   }
 
   .right ul {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background-color: #fff;
     flex-direction: column;
-    align-items: center;
-    display: none;
+    width: 200px;
+    border: 1px solid #ddd;
+    max-height: 0;
+    overflow: hidden;
   }
 
-  .right ul.open {
-    display: flex;
-  }
+  .right ul.show {
+    max-height: 300px;
+}
 
-  .right ul li {
-    margin: 10px 0;
-  }
+.right ul li {
+    margin: 15px 0;
+    text-align: center;
+}
 
   .left-content {
     width: 100%;
@@ -1090,11 +1103,11 @@ footer {
     text-align: center;
   }
 
-  #Shop .Lower{
+  #Shop .Lower {
     margin: 2rem 0.1rem;
   }
 
-  .product .image img{
+  .product .image img {
     margin: 1rem 0.1rem;
     height: 6rem;
     width: auto;
