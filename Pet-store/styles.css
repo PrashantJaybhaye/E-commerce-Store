@@ -834,16 +834,17 @@ section {
 }
 
 .disp-product {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px 20px;
 }
 
 .product {
   background-color: #fff;
   border-radius: 15px;
   height: 12.7rem;
-  width: 27.9rem;
+  width: auto;
   overflow: hidden;
   border-radius: 8px;
   display: flex;
@@ -863,6 +864,7 @@ section {
 
 .desc h3 {
   font-size: 0.8rem;
+  max-width: 29rem;
 }
 
 .desc .uni {
@@ -1021,12 +1023,12 @@ footer {
 
   .right ul.show {
     max-height: 300px;
-}
+  }
 
-.right ul li {
+  .right ul li {
     margin: 15px 0;
     text-align: center;
-}
+  }
 
   .left-content {
     width: 100%;
@@ -1058,6 +1060,7 @@ footer {
   }
 
   .disp-product {
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
