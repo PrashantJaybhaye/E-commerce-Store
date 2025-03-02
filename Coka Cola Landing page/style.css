@@ -32,6 +32,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 20px;
     /* background-color: royalblue; */
     width: 45%;
 }
@@ -40,6 +41,7 @@ body {
     font-size: 1rem;
     text-transform: capitalize;
     display: flex;
+    gap: 10px;
     align-items: center;
 }
 
@@ -52,6 +54,7 @@ body {
     font-size: 0.7rem;
     font-weight: 600;
     text-transform: capitalize;
+    text-wrap: nowrap;
 }
 
 #nav img {
@@ -149,7 +152,7 @@ body {
 
 #right-elems{
     /* background-color: red; */
-    width: 80%;
+    width: 90%;
 
 }
 
@@ -183,4 +186,122 @@ body {
     font-size: 10px;
     width: 90%;
     opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+    #nav {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    #nav-prt2 {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #nav h1, #nav h5 {
+        font-size: 0.8rem;
+    }
+
+    #content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #left, #right {
+        width: 90%;
+        padding: 20px;
+    }
+
+    #center {
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    #left h1 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    #left p {
+        font-size: 0.9rem;
+        width: 100%;
+    }
+
+    #left button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    #center-bg {
+        height: 60%;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #content>img {
+        height: auto;
+        width: 80%;
+        position: static;
+        transform: none;
+    }
+
+    #right-elems {
+        width: 100%;
+    }
+
+    #elem1, #elem2 {
+        height: auto;
+        padding: 10px 0;
+    }
+
+    #elem1 h1, #elem2 h1 {
+        font-size: 1.2rem;
+    }
+
+    #elem2 p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #nav {
+        padding: 10px;
+    }
+
+    #nav h1, #nav h5 {
+        font-size: 0.6rem;
+    }
+
+    #left h1 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    #left p {
+        font-size: 0.8rem;
+    }
+
+    #left button {
+        font-size: 0.8rem;
+        padding: 8px 15px;
+    }
+
+    #center-bg {
+        height: 50%;
+    }
+
+    #content>img {
+        width: 90%;
+    }
+
+    #elem1 h1, #elem2 h1 {
+        font-size: 1rem;
+    }
+
+    #elem2 p {
+        font-size: 0.8rem;
+    }
 }
